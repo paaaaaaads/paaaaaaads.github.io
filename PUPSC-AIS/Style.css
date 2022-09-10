@@ -1,0 +1,1384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    background-image: url(images/htmlbackground.png);
+}
+
+/* Navbar */
+.navbar{
+    background-color: #ffffff;
+    outline: 1px solid #F0F2F5;
+}
+
+.Logo{
+    display: flex;
+    margin: 0 20px;
+    align-items: center;
+}
+
+.Logo img{
+    height: 88px;
+    width: 88px;
+    margin: 5px 20px;
+}
+
+.Logo p{
+    font-family: 'Yanone Kaffeesatz', sans-serif;   
+    padding-top: 35px;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 20px;
+}
+
+.logotitle{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #DDA83F;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-item{
+    font-size: 15px;
+    font-weight: 500;
+    padding: 5px 15px;
+    text-decoration: none; 
+    position: relative; 
+}
+
+.navbar-nav .nav-link:hover {
+    color: black;
+}
+
+.btn{
+    width: 50px;
+}
+
+.btn:hover{
+
+    width: 50px;
+    border: none;
+}
+
+.btn i:hover{
+    color: black;
+}
+
+.btn .fa-solid{
+    padding: 0 10px;
+}
+
+.nav-item, .btn .fa-solid:hover{
+    color: black;
+}
+
+
+#content{
+    display: flex;
+}
+
+/* background content */
+.bgcontent{
+    padding: 50px 60px;
+    border-radius: 20px;
+    background-color: #DDA83F;
+    opacity: 92%;
+   
+}
+
+.divider{
+    border-bottom: 1px solid black;
+}
+
+.margin50{
+    margin: 50px 0;
+}
+
+.margin100{
+    margin: 100px 0;
+}
+
+.right{
+    float: right;
+    padding: 0 30px;
+}
+
+.right-join{
+    float: right;
+}
+
+.right-boost{
+    float: right;
+    padding-left: 30px;
+}
+
+
+.row-reverse{
+    flex-direction: row-reverse;
+}
+
+.flex{
+    display: flex;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.center-text{
+    text-align: center;
+}
+
+
+
+/* Home PHP*/
+
+main h1{
+    background:none;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.PUPSC-AIS{
+    height: auto;
+    width: auto;
+    max-width: 800px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.h5, h5{
+    padding-left: 40px;
+    font-size: 50px;
+}
+
+.PUPSC-AIS h1{
+    padding-top: 50px;
+    padding-left: 40px;
+    font-size: 50px;
+}
+
+.PUPSC-AIS p{
+    margin: 20px 60px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.FAQs{
+    height: auto;
+    width: auto;
+    max-width: 700px;
+    position: relative;
+    float: right;
+    padding: 0 50px;
+}
+
+.FAQs h1{
+    position: absolute;
+    left: 55%;
+    top: -45px;
+    font-size: 60px;
+    z-index: 1;
+}
+
+.FAQs dl dt{
+    padding-top: 10px;
+}
+
+.FAQs dl dd{
+   padding-left: .5in;
+   
+}
+
+.AboutUs{
+    text-align: center;
+    margin: auto;
+    height: auto;
+    max-width: 700px;
+}
+
+.AboutUs h1{
+    font-size: 50px;
+}
+
+.Feature{
+    margin: auto;
+    height: auto;
+    text-align: center;
+}
+
+.Feature h1{
+    font-size: 50px;
+    margin-top: 100px;
+    
+}
+
+.feature-content{
+    float: left;
+    padding: 16px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #fff;
+    outline: 1px solid #d2d3d4;
+    max-width: 350px;
+}
+
+.feature-content i{
+    font-size: 40px;
+    margin: 15px 0;
+}
+
+
+
+/* Announcement HTML*/
+
+.News{
+    height: auto;
+    width: auto;
+    position: relative;
+}
+
+.News h1{
+    position: absolute;
+    left: 20%;
+    top: -45px;
+    font-size: 70px;
+    background:none;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.NewsContent img{
+    max-width: 500px;
+    margin: 0 35px;
+    float: left;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+.NewsContent p{
+    padding: 20px 100px;
+}
+
+.Announcement{
+    margin: 50px 50px;
+}
+
+
+/* Academics HTML*/
+
+#webinar-title{
+    margin: 30px 40px;
+    font-size: 35px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.webinar-main-content{
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    margin: 30px 0;
+    overflow-x: scroll;
+}
+
+.video-content{
+    margin: 0 15px;
+    border-radius: 20px;
+    background-color: #bbbbbb;
+}
+
+.video-content iframe{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 300px;
+    height: 200px;
+}
+
+.video-content figcaption{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#navbar-documentation {
+    display: block;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    background-color: #24262b;
+    color: #fff;
+    width: 300px;
+    height: 100%;
+    border: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+    text-align: center;
+}
+
+#navbar-documentation ul {
+    height: 95%;
+    padding: 0;
+    
+}
+
+#navbar-documentation li{
+    border-bottom: 1px solid;
+    list-style: none;
+    position: relative;
+    font-size: 16px;
+}
+
+
+#navbar-documentation li a:hover{
+    color: black;
+    background-color: #E7E7E7;
+}
+
+
+#navbar-documentation a {
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+}
+
+#documentation-title {
+    color: #fff;
+    margin: 10px;
+    font-size: 30px;
+    font-weight: thin;
+}
+
+#academics-title{
+    text-align: center;
+}
+
+#main-doc{
+    margin: 0;
+    display: flex;
+}
+
+.documentation-content{
+    margin: 0 50px;
+}
+
+section {
+    display: block;
+    margin: 50px 0;
+}
+
+section header{
+    color: black;
+    font-size: 35px;
+    font-weight: thin;
+    margin: 15px 0;
+    
+}
+
+#main-section{
+    margin: 0 auto;  
+}
+
+#main-doc ul li, #main-doc ol li{
+    margin: 10px 60px;
+    padding: 5px 0;
+}
+
+article p{
+    text-indent: 0.5in;
+    padding: 5px 0;
+}
+
+.image{
+    float: left;
+    min-width: 100px;
+    min-height: 100px;
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+/* Forum HTML*/
+
+#open-container{
+    width: 100%;
+    padding: 10px 0;
+    position: sticky;
+    top: 5%;
+}
+
+#open, #close{
+    font-size: 25px;
+    padding: 10px 15px;
+    background-color: transparent;
+    border: none;
+}
+
+#close{
+    color: white;
+    position: absolute;
+    top: 6%;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -1500px;
+    width: 400px;
+    height: 100%;
+    background-color: #24262b;
+    color: #fff;
+    padding: 20px;
+    opacity: 99%;
+    transition: 0.5s;
+}
+
+#sidebar ul {
+    height: 95%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: 140px;
+    
+}
+
+#sidebar li{
+    list-style: none;
+    position: relative;
+    font-size: 20px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+main{
+    margin: 50px 20px;
+}
+
+.main-content{
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    margin: 0 50px;
+}
+
+.content, .cardbtn-content{
+    float: left;
+    padding: 16px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #fff;
+    outline: 1px solid #d2d3d4;
+}
+
+.content{
+    width: 850px;
+    display: flex;
+}
+
+.card-content{
+    padding: 10px 0;
+}
+
+.card-content p{
+    margin: 0;
+}
+
+.cardbtn-content{
+    width: 90px;
+}
+
+.forum-topic{
+    font-size: 25px;
+    font-weight: 600;
+    width: 100%;
+}
+
+.forum-topic-details{
+    margin: 10px;
+    height: 80px;
+}
+
+.forum-topic-details p{
+    margin-right: 80px;
+}
+
+
+.forum-topic-update{
+    margin: 10px 0;
+    width: 100%;
+}
+
+.card-image{
+    padding: 10px;
+    margin: 10px;
+    max-width: 100px;
+}
+
+.card-img{
+    max-width: 100%;
+}
+
+.card-image img{
+    border-radius: 100%;
+}
+
+.cardbtn{
+    display: flex;
+    flex-direction: column;
+}
+
+.cardbtn button{
+    padding: 10px;
+    margin: 5px;
+    color: black;
+    border: none;
+    background-color: transparent;
+}
+
+.cardbtn button:hover{
+    background-color: #e7e7e770;
+    border-radius: 50%;
+}
+
+.cardbtn i{
+    font-size: 20px;
+}
+
+.cardbtn a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.cardbtn a:hover{
+    color: black;
+}
+
+.cardbtn a:visited{
+    color: red;
+}
+
+
+
+
+
+/* ForumCommunity HTML*/
+
+.header{
+    background-image: url(https://www.volafinance.com/wp-content/uploads/2020/06/AdobeStock_305233591.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 192px;
+}
+
+#content-header{
+    background-color: #fff;
+    padding-bottom: 30px;
+}
+
+#community-header{
+    margin-left: 100px;
+    margin-right: 100px; 
+}
+
+#forum-image img{
+    border: 4px solid #fff;
+    border-radius: 100%;
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+    margin-top: -30px;
+}
+
+.forum-title-header{
+    padding: 8px 0;
+    width: 100%;
+}
+
+#forum-title-about h6{
+    width: 100%;
+    margin: 20px 0;
+}
+
+#members{
+   margin: 0 20px;
+   color: #6c757d;
+}
+
+#joinbtn button{
+    padding: 10px 25px;
+    border-radius: 20px;
+    background-color: #0079D3;
+    color: #fff;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 50px;
+}
+
+#joinbtn button:hover{
+    background-color: #51aff7;
+}
+
+.main-content-post{
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.content-post{
+    padding: 16px;
+    border-radius: 10px;
+    margin: 10px auto;
+    background-color: #fff;
+    outline: 1px solid #d2d3d4;
+    width: 800px;
+    height: auto;
+}
+
+#navlink-post{
+    margin: 0 auto;
+}
+
+#navlink-post ul{
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+#navlink-post ul li{
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+
+#sort{
+   font-size: 14px;
+   width: 80px;
+   border-radius: 5px;
+   border: none;
+   background-color: transparent;
+}
+
+#navlink-post ul li:hover{
+    background-color: #EDEDED;
+    border-radius: 20px;
+    color: #0079D3;
+}
+
+.form-group{
+    margin: 20px 0;
+}
+
+.form-group label{
+    padding-bottom: 10px;
+}
+
+#form-submitbtn{
+    padding: 10px 25px;
+    border-radius: 20px;
+    background-color: #0079D3;
+    color: #fff;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+}
+
+#form-submitbtn:hover{
+    background-color: #51aff7;
+}
+
+.post-comment{
+    width: 100%;
+}
+
+.forum-user-profile{
+    padding-right: 10px;
+    align-content: center;
+}
+
+.forum-user-profile img{
+    max-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+.posted-question p{
+    padding: 10px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#boostnumber::after{
+    content: attr(data-count);
+}
+
+.comment-links{
+    color: #878A8D;
+    margin: 20px 0;
+}
+
+.comment-links ul{
+    padding: 0;
+}
+
+.comment-links ul li{
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 0 10px;
+    border-radius: 15px;
+}
+
+.comment-links ul li:hover{
+    background-color: #E7E7E7;
+}
+
+.comment-links ul li button{
+    background-color: transparent;
+    border: none;
+    color: #878A8D;
+
+}
+
+.comment-links ul li i{
+    padding-right: 10px;
+}
+
+.reply-comment{
+    display: none;
+    margin: 50px 0;
+}
+
+#commentbtn{
+    margin: 20px 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #0079D3;
+    color: #fff;
+   
+}
+
+
+/* Concern and Complaints*/
+
+#Concern-body {
+    width: 100%;
+    height: 100vh;
+    margin: 50px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-image: linear-gradient( 115deg, rgba(11, 11, 66, 0.945), rgba(136, 136, 206, 0.7) ), url(/images/form-background.jpg);
+    background-size: cover;
+    color: white;
+}
+  
+.container h1, .container p{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+#concern-body p{
+    font-size: 1.125rem;
+}
+
+#concern-description{
+    margin-bottom: 50px;
+    font-style: italic;
+}
+
+.concern-form-group{
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+    font-size: 1.25rem;
+}
+  
+#survey-form {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #272746;
+    border-radius: 5px;
+    opacity: 90%;
+    color: white;
+}
+
+#name, #email, #number, #dropdown{
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    padding-left: 15px;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+input[type=radio], input[type=checkbox] {
+    border: 0px;
+    width: 20px;
+    height: 2em;
+    margin: 0 20px;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    margin: 1em auto;
+    font-size: 1.1rem;
+    padding: 0.75rem;
+    background-color: #E7E7E7;
+    border: none;
+    color: black;
+}
+
+#concern-comment{
+    height: 200px;
+    padding: 20px 0;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    padding-left: 15px;
+}
+
+#back{
+    color: #fff;
+    text-decoration: none;
+}
+
+#back label:hover{
+    padding-left: 10px;
+}
+  
+
+/* Footer */
+
+.footer{
+    background-color: #24262b;
+    padding: 30px 0;
+ 
+}
+
+.footer-content{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 10px 10px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin: 25px 0;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3 ease;
+}
+
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5 ease;
+}
+
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    #Feature{
+        flex-direction: column;
+    }
+    
+    .nav-item{
+        text-align: center;
+    }
+
+    .content {
+        width: auto; 
+        display: flex;
+    }
+
+    .forum-topic-details {
+        height: auto;
+    }
+
+    .content-post {
+        width: auto;
+        height: auto;
+        margin: 20px 20px;
+    }
+
+
+    
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    body p , body ul li{
+        font-size: 16px;
+    }
+
+    .footer-col h4 {
+        font-size: 20px;
+    }
+
+    .footer-col ul li a {
+        font-size: 16px;
+    }
+
+    .footer-col .social-links a {
+        margin-left: 10px;
+    } 
+
+    .footer ol, .footer ul {
+        padding-left: 0;
+    }
+
+    .nav-item{
+        text-align: center;
+    }
+
+    .Logo p{
+        width: 200px;
+    }
+
+    .FAQs{
+        padding: 0;
+    }
+
+    .bgcontent {
+        padding: 50px 40px;
+    }
+
+    #Feature{
+        flex-direction: column;
+    }
+
+    .NewsContent img{
+        width: 400px;
+        height: 300px;
+        margin: 0;
+        float: none;
+    }
+
+    .News h1{
+        font-size: 60px;
+        top: -40px;
+    }
+
+    .NewsContent p{
+        padding: 20px 30px;
+    }
+
+    .Announcement{
+        margin: 50px 30px;
+    }
+
+    #main-doc{
+        flex-direction: column;
+    }
+
+    #navbar-documentation {
+        width: auto;
+        height: 100%;
+        position: relative;
+        margin: 0 10px;
+    }
+    
+    .documentation-content {
+        margin: 0 30px;
+    }
+
+    section ol {
+        padding: 0;
+    }
+
+    #open-container{
+        position: relative;
+    }
+
+    #sidebar {
+        width: 100%;
+    }
+
+    .main-content{
+        flex-direction: column;
+        margin: 50px 20px;
+    }
+
+    .content {
+        width: auto; 
+        flex-direction: column;
+    }
+
+    .card-image{
+        justify-content: center;
+        margin: auto;
+    }
+
+    .forum-topic p{
+        font-size: 22px;
+    }
+
+    .forum-topic-details {
+        height: auto;
+    }
+
+    .card-content {
+        padding: 10px 0px;
+        margin: 0 30px;
+    }
+
+    .forum-topic-details p {
+        margin-right: 0;
+        padding: 20px 0;
+    }
+
+    .cardbtn-content {
+        width: auto;
+    }
+
+    .cardbtn {
+        flex-direction: row;
+        margin: 0 80px;
+    }
+
+    .cardbtn button {
+        margin: auto;
+    }
+
+    #community-header {
+        margin-left: 40px;
+        margin-right: 0;
+    }
+
+    .content-post {
+        width: auto;
+        height: auto;
+        margin: 20px 20px;
+    }
+
+    #navlink-post ul li {
+        padding: 0; 
+    }
+
+    .comment-links ul li {
+        display: block; 
+    }
+
+    #joinbtn button {
+        margin: 0 20px; 
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    body p , body ul li{
+        font-size: 14px;
+    }
+
+    .footer-col h4 {
+        font-size: 16px;
+    }
+
+    .footer-col ul li a {
+        font-size: 14px;
+    }
+
+    .footer-col .social-links a {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        margin-left: 10px;
+    } 
+
+    .footer ol, .footer ul {
+        padding-left: 0;
+    }
+
+    .PUPSC-AIS h1, .FAQs h1, .Feature h1, .News h1, .AboutUs h1{
+        font-size: 35px;
+    }
+
+    .nav-item{
+        text-align: center;
+    }
+
+    .Logo{
+        margin: 0;
+    }
+
+    .Logo img {
+        margin: 5px 10px; 
+    }
+
+    .Logo p{
+        width: 150px;
+        font-size: 33px;
+    }
+
+    .logotitle{
+        font-size: 12px;
+    }
+
+    .FAQs{
+        padding: 0;
+        margin: 0 5px;
+    }
+
+    .FAQs h1 {
+        left: 35%;
+    }
+
+    .AboutUs p {
+        margin: 0 10px;
+    }
+
+    .bgcontent {
+        padding: 50px 30px;
+    }
+
+    main {
+        margin: 50px 5px;
+    }
+
+    #Feature{
+        flex-direction: column;
+    }
+
+    .NewsContent img{
+        width: 320px;
+        height: 300px;
+        margin: 0;
+        float: none;
+    }
+
+    .NewsContent p{
+        padding: 20px 30px;
+    }
+
+    .Announcement{
+        margin: 50px 30px;
+    }
+
+    #webinar-title{
+        font-size: 25px;
+    }
+
+    #academics-title {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    #documentation-title {
+        font-size: 20px;
+    }
+
+    #main-doc{
+        flex-direction: column;
+    }
+
+    #navbar-documentation {
+        width: auto;
+        height: 100%;
+        position: relative;
+        margin: 0 10px;
+        font-size: 16px;
+    }
+    
+    .documentation-content {
+        margin: 0 30px;
+    }
+
+    #main-doc ul li{
+        margin: 10px 0;
+    }
+
+    section header {
+        font-size: 25px;
+    }
+
+    section ol {
+        padding: 0;
+    }
+
+    section ol li{
+        padding: 0;
+        font-size: 14px;
+    }
+
+    #open-container{
+        position: relative;
+    }
+
+    #sidebar {
+        width: 100%;
+    }
+
+    #sidebar ul li{
+        font-size: 16px;
+    }
+
+    .main-content{
+        flex-direction: column;
+        margin: 50px 20px;
+    }
+
+    .content {
+        width: auto; 
+        flex-direction: column;
+    }
+
+    .card-image{
+        justify-content: center;
+        margin: auto;
+    }
+
+    .forum-topic-details {
+        height: auto;
+    }
+
+    .card-content {
+        padding: 10px 0px;
+        margin: 0 30px;
+    }
+
+    .forum-topic p {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .forum-topic-details p {
+        margin-right: 0;
+        padding: 20px 0;
+    }
+
+    .cardbtn-content {
+        width: auto;
+    }
+
+    .cardbtn {
+        flex-direction: row;
+        margin: 0 80px;
+    }
+
+    .cardbtn button {
+        margin: auto;
+    }
+
+    #forum-image img {
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+    }
+
+    #members {
+        margin: 0 23px;
+    }
+
+    #community-header {
+        margin-left: 40px;
+        margin-right: 0;
+    }
+
+    .content-post {
+        width: auto;
+        height: auto;
+        margin: 20px 20px;
+    }
+
+    #navlink-post ul li {
+        padding: 0; 
+        margin: 0 5px;
+    }
+
+    .comment-links ul li {
+        display: block; 
+    }
+
+    #joinbtn button {
+        margin: 0 10px; 
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    #form-submitbtn {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    #commentbtn {
+        font-size: 14px;
+    }
+
+    #forum-title h3{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    #forum-title-about h3{
+        font-size: 20px;
+        width: 100%;
+    }
+
+    
+
+
+}
