@@ -120,8 +120,10 @@
               <label class="title-label" for="password">Password </label>
               <input
                 class="box_input"
-                type="password"
                 name="password"
+                type="password"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least 1 number and 1 uppercase and lowercase letter, and at least 8 or more characters"
                 placeholder="Password"
                 required
               />
@@ -133,9 +135,11 @@
               </label>
               <input
                 class="box_input"
-                type="password"
                 name="confirm_password"
-                placeholder="Confrim Password"
+                type="password"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least 1 number and 1 uppercase and lowercase letter, and at least 8 or more characters"
+                placeholder="Confirm Password"
                 required
               />
             </div>
@@ -158,26 +162,27 @@
 
     <script>
       function nextStep() {
-        // Get the current step and the next step
+        // get current and next step
         var current = document.querySelector(
           '#signup_form > div:not([style*="display: none"])'
         );
 
         var next = current.nextElementSibling;
 
-        // Hide the current step and show the next step
+        // hide the current step and display the next step
         current.style.display = "none";
         next.style.display = "block";
       }
 
       function prevStep() {
-        // Get the current step and the previous step
+        // get current and previous step
         var current = document.querySelector(
           '#signup_form > div:not([style*="display: none"])'
         );
+
         var prev = current.previousElementSibling;
 
-        // Hide the current step and show the previous step
+        // hide the current step and display the previous step
         current.style.display = "none";
         prev.style.display = "block";
       }

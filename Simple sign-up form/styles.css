@@ -86,12 +86,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   filter: invert(0.9);
 }
 
-#dropdown option {
-  color: #000;
-}
-
 #option-default {
   color: #bebebe;
+}
+
+#dropdown option {
+  color: #000;
 }
 
 #terms-description {
