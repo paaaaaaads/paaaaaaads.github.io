@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #e0e0e0;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  margin: 100px 0;
+}
+
+#header-title {
+  margin: auto 0;
+  width: 50%;
+  text-align: center;
+}
+
+#header-title img {
+  margin: 20px auto;
+}
+
+#title-registration {
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+
+.title-logo {
+  width: 350px;
+  margin: 0 auto;
+  padding-bottom: 150px;
+  border-radius: 57px;
+  background: #e0e0e0;
+  box-shadow: 5px 5px 10px #5a5a5a, -5px -5px 10px #ffffff;
+}
+
+.form-register {
+  max-width: 700px;
+  height: 455px;
+  padding: 50px;
+  color: black;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: 31px 31px 72px #5a5a5a, -31px -31px 72px #ffffff;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+#form-group {
+  width: 50%;
+}
+
+.title-label {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.box_input {
+  width: 100%;
+  padding: 10px;
+  padding-left: 20px;
+  outline: none;
+  margin: 5px 0 10px 0;
+  border: 1px solid #000;
+  border-radius: 10px;
+  transition: 0.7s;
+  background: transparent;
+  cursor: pointer;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.9);
+}
+
+#dropdown option {
+  color: #000;
+}
+
+#option-default {
+  color: #bebebe;
+}
+
+#terms-description {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.box_input:focus,
+.box_input:valid {
+  color: #fff;
+  box-shadow: inset 700px 0 #000;
+}
+
+#register-btn {
+  width: 150px;
+  margin: 0 auto;
+  padding: 10px 45px;
+  border: 1px solid #000;
+  background: transparent;
+  transition: 0.5s ease-out;
+}
+
+#register-btn:hover {
+  transform: scale(120%);
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
