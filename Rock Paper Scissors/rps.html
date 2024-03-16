@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rps.css">
+</head>
+
+<body>
+
+    <main>
+
+        <header>
+            <h3>Player's Score: <span class="Scorecard" id="playerScore"></span></h3>
+            <h2>Rock Paper Scissors Game</h2>
+            <h3>Computer's Score <span class="Scorecard" id="computerScore"></span></h3>
+        </header>
+
+        <section class="winnerContainer">
+            <p id="playerWinner" class="Winner hidden">Winner</p>
+            <p id="winner" class="hidden">Winner Here!</p>
+            <p id="computerWinner" class="Winner hidden">Winner</p>
+        </section>
+
+        <audio id="myAudio">
+            <source src="AudioEffects.wav" type="audio/mpeg">
+        </audio>
+
+        <section class="playContainer">
+            <img id="playerImage" class="playImage" src="Images/PlayerRock.svg" alt="Rock">
+
+            <img id="computerImage" class="playImage" src="Images/Rock.svg" alt="Rock">
+        </section>
+
+
+        <section class="ButtonContainer">
+            <button class="startButton" onclick="startGame()">Start Game</button>
+            <button class="resetButton" onclick="resetScore()">Reset Score</button>
+        </section>
+
+        <section class="modal">
+
+            <div class="playButtonContainer">
+
+                <p class="countdown">5</p>
+
+                <button class="playButton" onclick="playGame('Rock')">
+                    <img class="playIcon" src="Images/PlayerRock.svg" alt="Rock">
+                </button>
+
+                <button class="playButton" onclick="playGame('Paper')">
+                    <img class="playIcon" src="Images/PlayerPaper.svg" alt="Paper">
+                </button>
+
+                <button class="playButton" onclick="playGame('Scissors')">
+                    <img class="playIcon" src="Images/PlayerScissors.svg" alt="Scissors">
+                </button>
+
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <script src="rps.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+header{
+    margin: 10px 0;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Scorecard{
+  font-size: 25px;
+  border: #000 2px solid;
+  padding: 15px;
+  margin: 5px;
+}
+
+.playContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 80px;
+}
+
+.playImage{
+    max-width: 450px;
+    min-width: 120px;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0) ;
+  }
+  50% {
+    transform: translateY(-50px) rotate(25deg); 
+  }
+  100% {
+    transform: translateY(0); 
+  }
+}
+
+@keyframes moveUpDown2 {
+  0% {
+    transform: translateY(0) ;
+  }
+  50% {
+    transform: translateY(-50px) rotate(-25deg); 
+  }
+  100% {
+    transform: translateY(0); 
+  }
+}
+
+.computer{
+    animation: moveUpDown 1s ease-in-out infinite;
+}
+
+.player{
+    animation: moveUpDown2 1s ease-in-out infinite;
+}
+
+.stopAnimate{
+    animation: none;
+}
+
+
+.ButtonContainer{
+    text-align: center;
+}
+
+.resetButton{
+    border: none;
+    border-radius: 40px;
+    background-color: hsl(342, 98%, 40%);
+    padding: 15px 40px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.startButton{
+    border: none;
+    border-radius: 40px;
+    background-color: hsl(204, 98%, 40%);
+    padding: 15px 40px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.modal{
+    display: none;
+    background-color: rgba(245, 220, 220, 0.452);
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    justify-content: center;
+}
+
+.countdown{
+    font-size: 12em;
+    color: #000;
+    text-align: center;
+}
+
+.playIcon{
+    width: 120px;
+    height: 120px;
+}
+
+.playButtonContainer{
+    margin: 150px 0;  
+}
+
+.playButton{
+    margin: 20px 20px;
+    border: 2px solid #000;
+    background-color: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.Winner{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  font-style: italic;
+}
+
+
+.winnerContainer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
